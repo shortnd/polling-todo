@@ -1,0 +1,8 @@
+<div *ngIf="!error;else error_template">
+  <ul>
+    <li *ngFor="let todo of todos">
+      {{ todo.title }}
+    </li>
+  </ul>
+</div>
+<ng-template #error_template>Error</ng-template>
